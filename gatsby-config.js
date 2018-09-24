@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Alpine Breeze',
+    title: 'Alpine Spring',
   },
   plugins: [
     {
