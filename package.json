@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "notes-and-scripts",
+  "description": "Notes and Scripts ",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sonam Chhogyel <schyles@gmail.com>",
   "dependencies": {
     "emotion": "^9.2.10",
     "emotion-server": "^9.2.10",
@@ -34,9 +34,5 @@
   },
   "devDependencies": {
     "prettier": "^1.14.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }

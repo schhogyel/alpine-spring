@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Alpine Spring',
+    title: 'Notes & Scripts',
   },
   plugins: [
     {
