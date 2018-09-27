@@ -3,11 +3,12 @@ import { css } from 'react-emotion'
 import { Link, graphql } from 'gatsby'
 import { rhythm } from '../utils/typography'
 import Layout from '../components/layout'
+import '../styles/styles.css'
 
 export default ({ data }) => {
   return (
     <Layout>
-      <div>
+      <div class="bg-aqua">
         <h1
           className={css`
             display: inline-block;

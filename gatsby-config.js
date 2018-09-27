@@ -12,6 +12,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
