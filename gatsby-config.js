@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Notes & Scripts',
+    title: 'Vulture Speak',
   },
   plugins: [
     {
