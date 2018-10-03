@@ -60,3 +60,17 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.border-style {
+    position: relative;
+}
+
+.border-style::after {
+    top: 20px;
+    right: 0;
+    width: 1px;
+    bottom: 20px;
+    content: "";
+    position: absolute;
+    border-right: 1px solid #dedede;
+}

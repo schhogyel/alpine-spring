@@ -1,5 +1,5 @@
 ---
-title: 'Getting Tailwindcss to work with Gatsby'
+title: 'Getting TailwindCSS to work with Gatsby'
 date: '2018-09-27'
 ---
 
