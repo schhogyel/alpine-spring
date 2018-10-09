@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vulture Speak',
+    title: 'Red Panda Smiles',
   },
   plugins: [
     {
