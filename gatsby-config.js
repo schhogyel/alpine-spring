@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Red Panda Smiles',
+    title: 'Red Panda Writes:',
   },
   plugins: [
     {
