@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import { css } from 'emotion'
 
 const Header = props => (
   <div className="flex bg-white border-b border-grey-lighter fixed pin-t pin-x z-100 h-16 items-center">

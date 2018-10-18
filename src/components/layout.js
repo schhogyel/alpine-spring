@@ -1,10 +1,7 @@
 import React from 'react'
-// import { css } from 'react-emotion'
 import { StaticQuery, graphql } from 'gatsby'
 import Sidebar from './Sidebar'
-import Header from './Header'
-
-// import { rhythm } from '../utils/typography'
+import TopBar from './TopBar'
 
 export default ({ children }) => (
   <StaticQuery
@@ -20,7 +17,7 @@ export default ({ children }) => (
     render={data => (
       // <div className="flex md:block md:absolute pin overflow-hidden">
       <div className="">
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <TopBar siteTitle={data.site.siteMetadata.title} />
         <div className="w-full max-w-screen-xl mx-auto px-6">
           <div className="lg:flex -mx-6">
             <div className="justify-center hidden lg:flex absolute z-90 top-16 bg-white w-full border-b -mb-16 lg:-mb-0 lg:static lg:bg-transparent lg:border-b-0 lg:pt-0 lg:w-1/4 lg:border-0 xl:w-1/5">
