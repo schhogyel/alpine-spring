@@ -61,16 +61,20 @@
  * @import "utilities/skew-transforms";
  */
 
+/* html {
+  overflow: hidden;
+} */
+
 .border-style {
-    position: relative;
+  position: relative;
 }
 
 .border-style::after {
-    top: 20px;
-    right: 0;
-    width: 1px;
-    bottom: 20px;
-    content: "";
-    position: absolute;
-    border-right: 1px solid #dedede;
+  top: 20px;
+  right: 0;
+  width: 1px;
+  bottom: 20px;
+  content: '';
+  position: absolute;
+  border-right: 1px solid #dedede;
 }

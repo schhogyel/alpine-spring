@@ -13,7 +13,11 @@ export default ({ data }) => {
         </div>
         <div
           className="text-grey-darker text-base"
-          dangerouslySetInnerHTML={{ __html: post.html }}
+          dangerouslySetInnerHTML={{
+            __html: `<span class="text-grey-dark">
+                    ${post.frontmatter.date} —
+                  </span>${post.html}`,
+          }}
         />
       </div>
     </Layout>
@@ -25,6 +29,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        date(formatString: "DD MMMM, YYYY")
         title
       }
     }
