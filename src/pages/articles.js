@@ -1,37 +1,62 @@
 import React from 'react'
 import { css } from 'react-emotion'
 import { Link, graphql } from 'gatsby'
-// import { rhythm } from '../utils/typography'
 import Layout from '../components/layout'
 import '../styles/styles.css'
 
 const articleTitle = css({
   fontFamily: 'KoHo, sans-serif',
-  fontWeight: 'bold'
+  fontWeight: 'bold',
 })
 
 const articleDate = css({
   fontFamily: 'Lato, sans-serif',
   fontSize: '0.9rem',
-  color: 'grey'
+  color: 'grey',
+})
+
+const pageTitle = css({
+  fontFamily: "Lato, sans-serif",
+  fontSize: '0.95rem',
+  marginTop: '1.25rem',
+  textTransform: 'uppercase'
+  
+})
+
+const pageSubtitle = css({
+  fontFamily: 'Lato, sans-serif',
+  fontWeight: 'bold',
+  fontSize: '2rem',
+  margin: '2rem 0'
+})
+
+const pageDescription = css({
+  fontFamily: 'Lato, sans-serif',
+  fontSize: '1.25rem',
+  marginBottom: '3.75rem'
 })
 
 export default ({ data }) => {
   return (
     <Layout>
-      <div>Hi</div>
+      <h3 className={pageTitle}>Articles</h3>
+      <div className={pageSubtitle}>On design and development</div>
+      <div className={pageDescription}>
+        I don't write as often as I wish, but when I do , I publish my pieces on
+        this very page.
+      </div>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id} className="max-w-md w-full lg:flex">
+          <div key={node.id} className="w-full lg:flex">
             <Link
               to={node.fields.slug}
               className={css`
                 text-decoration: none;
                 color: inherit;
-                width: 100%
+                width: 100%;
               `}
             >
-              <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-r py-2 flex justify-between leading-normal w-full">
+              <div className="bg-white rounded-b lg:rounded-b-none lg:rounded-r py-4 flex justify-between leading-normal w-full border-grey-lighter border-b">
                 <div className={articleTitle}>{node.frontmatter.title}</div>
                 <p className={articleDate}>{node.frontmatter.date}</p>
               </div>
@@ -52,7 +77,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMM YYYY")
           }
           fields {
             slug

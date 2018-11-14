@@ -1,8 +1,8 @@
 import React from 'react'
 import { css } from 'react-emotion'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
 import '../styles/styles.css'
+import SocialIcons from '../components/SocialIcons'
 
 const introText = css({
   fontFamily: 'Allerta Stencil',
@@ -11,8 +11,10 @@ const introText = css({
 })
 
 const tagLine = css({
+  color: '#5661B3',
   fontFamily: 'KoHo',
   fontSize: '2.25rem',
+  lineHeight: '2.725rem',
   margin: '2rem 0',
 })
 
@@ -23,7 +25,7 @@ const textBlurp = css({
 })
 
 const hoverEffect = css({
-  color: '#2490dc',
+  color: '#7886D7',
 })
 
 const MenuButton = css({
@@ -31,8 +33,8 @@ const MenuButton = css({
   fontFamily: 'KoHo, sans-serif',
   fontSize: '1rem',
   fontWeight: 'bold',
-  color: '#fff',
-  borderBottom: '1px solid #fff',
+  color: '#5661B3',
+  borderBottom: '1px solid #F6993F',
   padding: '0.5rem 0.75rem',
   marginRight: '1rem',
   ':hover': hoverEffect,
@@ -40,7 +42,7 @@ const MenuButton = css({
 
 export default ({ data }) => {
   return (
-    <div className="flex h-screen flex-col justify-center items-center bg-teal">
+    <div className="flex h-screen flex-col justify-center items-center bg-white">
       <div className="w-1/2">
         <div className={introText}>Hi I am Dash_.</div>
         <h3 className={tagLine}>
@@ -58,6 +60,7 @@ export default ({ data }) => {
 
         <button className={MenuButton}>Contact</button>
       </div>
+      <SocialIcons />
     </div>
   )
 }
