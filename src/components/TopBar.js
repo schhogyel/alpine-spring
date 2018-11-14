@@ -11,10 +11,9 @@ const menuButton = css({
   fontFamily: 'KoHo, sans-serif',
   fontSize: '1rem',
   fontWeight: 'bold',
+  textTransform: 'uppercase',
   color: '#5661B3',
-  borderBottom: '1px solid #F6993F',
   padding: '0.5rem 0.75rem',
-  marginRight: '1rem',
   textDecoration: 'none',
   ':hover': hoverEffect,
 })
@@ -26,7 +25,7 @@ const Header = props => (
         <Link to="/" className={menuButton}>
           Home
         </Link>
-        <Link to="/about" className={menuButton}>
+        <Link to="/articles" className={menuButton}>
           Articles
         </Link>
       </div>
