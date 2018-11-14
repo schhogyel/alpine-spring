@@ -42,7 +42,7 @@ const tagLine = css`
   font-size: 1.5rem;
   line-height: 1.25;
   margin: 1rem 0;
-  
+
   ${mq.medium(css`
     margin: 2rem 0;
     font-size: 2.25rem;
@@ -62,15 +62,15 @@ const textBlurp = css`
 
 const hoverEffect = css({
   color: '#7886D7',
+  borderBottom: '1px solid #F6993F',
 })
 
 const MenuButton = css({
   background: 'transparent',
-  fontFamily: 'KoHo, sans-serif',
+  fontFamily: 'Lato, sans-serif',
   fontSize: '1rem',
   fontWeight: 'bold',
   color: '#5661B3',
-  borderBottom: '1px solid #F6993F',
   padding: '0.5rem 0.75rem',
   marginRight: '1rem',
   ':hover': hoverEffect,
@@ -89,11 +89,19 @@ export default ({ data }) => {
           skills and expertise in all user experience design related fields.
         </p>
       </div>
-      <div className="flex mt-2 lg:mt-16 justify-start lg:w-1/2">
+      <div className="flex mt-2 lg:mt-16 justify-center lg:w-1/2">
         <Link to="articles">
           <button className={MenuButton}>Articles</button>
+        </Link>{' '}
+        <Link to="articles">
+          <button className={MenuButton}>Projects</button>
+        </Link>{' '}
+        <Link to="articles">
+          <button className={MenuButton}>Tools</button>
+        </Link>{' '}
+        <Link to="articles">
+          <button className={MenuButton}>Clients</button>
         </Link>
-
         <button className={MenuButton}>Contact</button>
       </div>
       <SocialIcons />
