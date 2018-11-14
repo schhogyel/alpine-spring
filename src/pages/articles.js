@@ -33,17 +33,17 @@ const pageSubtitle = css({
 const pageDescription = css({
   fontFamily: 'Lato, sans-serif',
   fontSize: '1.25rem',
-  marginBottom: '3.75rem'
+  marginBottom: '3.75rem',
+  lineHeight: '1.25'
 })
 
 export default ({ data }) => {
   return (
     <Layout>
       <h3 className={pageTitle}>Articles</h3>
-      <div className={pageSubtitle}>On design and development</div>
+      <div className={pageSubtitle}>A chroncile of trials and tribulation in a life of a developer</div>
       <div className={pageDescription}>
-        I don't write as often as I wish, but when I do , I publish my pieces on
-        this very page.
+      This here contains articles that may or may not be definitive of facts and are often entirely author's musings and experiments with tools & technologies.
       </div>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (

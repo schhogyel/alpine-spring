@@ -37,7 +37,7 @@ const introText = css`
 `
 
 const tagLine = css`
-  color: #5661b3;
+  color: #000;
   font-family: KoHo, sans-serif;
   font-size: 1.5rem;
   line-height: 1.25;
@@ -59,50 +59,55 @@ const textBlurp = css`
     margin-top: 2.5rem;
   `)};
 `
+const menuButton = css`
+  background: transparent;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5661b3;
+  padding: 0.5rem 0.75rem;
+  margin-right: 1rem;
+  position: relative;
+  border-bottom: 1px solid #fff;
 
-const hoverEffect = css({
-  color: '#7886D7',
-  borderBottom: '1px solid #F6993F',
-})
+  &:hover {
+    color: #7886d7;
+    border-bottom: 1px solid #f6993f;
+  }
 
-const MenuButton = css({
-  background: 'transparent',
-  fontFamily: 'Lato, sans-serif',
-  fontSize: '1rem',
-  fontWeight: 'bold',
-  color: '#5661B3',
-  padding: '0.5rem 0.75rem',
-  marginRight: '1rem',
-  ':hover': hoverEffect,
-})
+  &:not(:last-child):after {
+    content: '.';
+    position: absolute;
+    right: -10px;
+    top: 5px;
+  }
+`
 
 export default ({ data }) => {
   return (
     <div className="flex h-screen flex-col justify-center items-center bg-white">
       <div className="lg:w-1/2 py-4 px-8 lg:p-2">
-        <div className={introText}>Hi I am Dash_.</div>
+        <div className={introText}>Hello! My name is Dash_.</div>
         <h3 className={tagLine}>
-          I help companies deliver delightful digital experiences.
+          I help clients and companies achieve their digital goals.
         </h3>
         <p className={textBlurp}>
-          I’m a product designer and front-end developer with a broad range of
-          skills and expertise in all user experience design related fields.
+          I’m a developer with wide range of skills and expertise. I build user interfaces, web services and applications. My current toolbelt contains React, GraphQl, Node and Express.     
         </p>
       </div>
       <div className="flex mt-2 lg:mt-16 justify-center lg:w-1/2">
-        <Link to="articles">
-          <button className={MenuButton}>Articles</button>
+        <Link to="articles" className={menuButton}>
+          <button>Articles</button>
         </Link>{' '}
-        <Link to="articles">
-          <button className={MenuButton}>Projects</button>
+        <Link to="articles" className={menuButton}>
+          <button>Projects</button>
         </Link>{' '}
-        <Link to="articles">
-          <button className={MenuButton}>Tools</button>
+        <Link to="articles" className={menuButton}>
+          <button>Tools</button>
         </Link>{' '}
-        <Link to="articles">
-          <button className={MenuButton}>Clients</button>
+        <Link to="articles" className={menuButton}>
+          <button>Clients</button>
         </Link>
-        <button className={MenuButton}>Contact</button>
       </div>
       <SocialIcons />
     </div>
