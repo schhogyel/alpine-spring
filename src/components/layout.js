@@ -18,12 +18,12 @@ export default ({ children }) => (
     render={data => (
       <>
         <TopBar siteTitle={data.site.siteMetadata.title} />
-        <main className="flex w-full max-w-screen-xl mx-auto pb-12">
-          <div className="w-1/4">
+        <main className="flex w-full max-w-screen-xl mx-auto pb-12 p-4">
+          <div className="w-1/4 hidden lg:block">
             <Sidebar />
           </div>
-          <div className="w-3/4">
-            <div className="max-w-md pt-16">{children}</div>
+          <div className="lg:w-3/4 w-full">
+            <div className="lg:max-w-md pt-16">{children}</div>
           </div>
         </main>
         <Footer />
