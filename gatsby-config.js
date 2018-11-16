@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Allerta Stencil`, `KoHo`, `Lato`],
+        fonts: [`Allerta Stencil`, `KoHo`, `Lato`, `Inconsolata`],
       },
     },
     {

@@ -78,3 +78,34 @@
   position: absolute;
   border-right: 1px solid #dedede;
 }
+
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+.gatsby-highlight {
+  background-color: #f4f5f7;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  font-family: 'Inconsolata', monospace;
+}
