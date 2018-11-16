@@ -30,6 +30,7 @@ const introText = css`
   font-family: Allerta Stencil;
   font-size: 1.125rem;
   margin-bottom: 1rem;
+  color: #fff;
 
   ${mq.medium(css`
     margin-bottom: 2rem;
@@ -37,7 +38,7 @@ const introText = css`
 `
 
 const tagLine = css`
-  color: #000;
+  color: #fff;
   font-family: KoHo, sans-serif;
   font-size: 1.5rem;
   line-height: 1.25;
@@ -45,7 +46,7 @@ const tagLine = css`
 
   ${mq.medium(css`
     margin: 2rem 0;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1.5;
   `)};
 `
@@ -54,6 +55,7 @@ const textBlurp = css`
   font-family: Lato, sans-serif;
   margin-top: 1.5rem;
   line-height: 1.5;
+  color: #fff;
 
   ${mq.medium(css`
     margin-top: 2.5rem;
@@ -64,14 +66,16 @@ const menuButton = css`
   font-family: Lato, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  color: #5661b3;
+  color: #fff;
   padding: 0.5rem 0.75rem;
   margin-right: 1rem;
   position: relative;
-  border-bottom: 1px solid #fff;
+
+  button {
+    color: #fff;
+  }
 
   &:hover {
-    color: #7886d7;
     border-bottom: 1px solid #f6993f;
   }
 
@@ -82,17 +86,28 @@ const menuButton = css`
     top: 5px;
   }
 `
+const background = css`
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #374859;
+  background: linear-gradient(to top, #6d8093 0%, #374859 100%);
+`
 
 export default ({ data }) => {
   return (
-    <div className="flex h-screen flex-col justify-center items-center bg-white">
+    <div className={background}>
       <div className="lg:w-1/2 py-4 px-8 lg:p-2">
         <div className={introText}>Hello! My name is Dash_.</div>
         <h3 className={tagLine}>
           I help clients and companies achieve their digital goals.
         </h3>
         <p className={textBlurp}>
-          I’m a developer with wide range of skills and expertise. I build user interfaces, web services and applications. My current toolbelt contains React, GraphQl, Node and Express.     
+          I’m a developer with wide range of skills and expertise. I build user
+          interfaces, web services and applications. My current toolbelt
+          contains React, GraphQl, Node and Express.
         </p>
       </div>
       <div className="flex mt-2 lg:mt-16 justify-center lg:w-1/2">

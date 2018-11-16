@@ -3,7 +3,7 @@ import { css } from 'emotion'
 
 const svgInline = css({
   width: '1rem',
-  fill: '#5661B3'
+  fill: '#EFF6FC'
 })
 
 
