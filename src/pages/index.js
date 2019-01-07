@@ -39,7 +39,7 @@ const introText = css`
 
 const tagLine = css`
   color: #fff;
-  font-family: KoHo, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 1.8rem;
   line-height: 1.25;
   margin: 1.5rem 0;

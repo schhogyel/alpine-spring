@@ -10,11 +10,11 @@ const textContent = css({
 })
 
 const articleTitle = css({
-  fontFamily: 'KoHo, sans-serif',
+  fontFamily: 'Raleway, sans-serif',
   fontSize: '1.75rem',
   fontWeight: 'bold',
   marginBottom: '1.75rem',
-  paddingTop: '1rem'
+  paddingTop: '1rem',
 })
 export default ({ data }) => {
   const post = data.markdownRemark

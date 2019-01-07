@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import '../styles/styles.css'
 
 const articleTitle = css({
-  fontFamily: 'KoHo, sans-serif',
+  fontFamily: 'Raleway, sans-serif',
   fontWeight: 'bold',
 })
 
@@ -16,34 +16,37 @@ const articleDate = css({
 })
 
 const pageTitle = css({
-  fontFamily: "Lato, sans-serif",
+  fontFamily: 'Lato, sans-serif',
   fontSize: '0.95rem',
   marginTop: '1.25rem',
-  textTransform: 'uppercase'
-  
+  textTransform: 'uppercase',
 })
 
 const pageSubtitle = css({
   fontFamily: 'Lato, sans-serif',
   fontWeight: 'bold',
   fontSize: '2rem',
-  margin: '2rem 0'
+  margin: '2rem 0',
 })
 
 const pageDescription = css({
   fontFamily: 'Lato, sans-serif',
   fontSize: '1.25rem',
   marginBottom: '3.75rem',
-  lineHeight: '1.25'
+  lineHeight: '1.25',
 })
 
 export default ({ data }) => {
   return (
     <Layout>
       <h3 className={pageTitle}>Articles</h3>
-      <div className={pageSubtitle}>A chroncile of trials and tribulation in a life of a developer</div>
+      <div className={pageSubtitle}>
+        A chroncile of trials and tribulation in a life of a developer
+      </div>
       <div className={pageDescription}>
-      This here contains articles that may or may not be definitive of facts and are often entirely author's musings and experiments with tools & technologies.
+        This here contains articles that may or may not be definitive of facts
+        and are often entirely author's musings and experiments with tools &
+        technologies.
       </div>
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
