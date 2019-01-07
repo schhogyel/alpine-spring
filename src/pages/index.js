@@ -118,7 +118,7 @@ export default ({ data }) => {
         </p>
       </div>
       <div className="lg:w-1/2 mt-auto flex justify-center flex-col">
-        <div className="flex mt-2 lg:mt-16 justify-center">
+        <div className="flex my-2 lg:mt-16 justify-center">
           <Link to="articles" className={menuButton}>
             <button>Articles</button>
           </Link>{' '}
