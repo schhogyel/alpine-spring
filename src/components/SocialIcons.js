@@ -7,7 +7,7 @@ const svgInline = css({
 
 const SocialIcons = props => {
   return (
-    <div className="flex items-center justify-center text-xl my-2 lg:mt-8">
+    <div className="flex items-center justify-center text-xl my-2">
       <div>
         <a
           className="text-black"

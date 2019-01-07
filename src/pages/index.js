@@ -111,11 +111,11 @@ export default ({ data }) => {
         <h3 className={tagLine}>
           I help clients and companies achieve their digital goals.
         </h3>
-        <p className={textBlurp}>
+        <div className={textBlurp}>
           I’m a developer with wide range of skills and expertise. I build user
           interfaces, web services and applications. My current toolbelt
           contains React, GraphQl, Node and Express.
-        </p>
+        </div>
       </div>
       <div className="lg:w-1/2 mt-auto flex justify-center flex-col">
         <div className="flex my-2 lg:mt-16 justify-center">
