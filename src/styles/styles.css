@@ -109,3 +109,7 @@ code[class*='language-'],
 pre[class*='language-'] {
   font-family: 'Inconsolata', monospace;
 }
+
+.container {
+  max-width: 650px;
+}

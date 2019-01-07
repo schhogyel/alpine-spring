@@ -40,9 +40,9 @@ const introText = css`
 const tagLine = css`
   color: #fff;
   font-family: KoHo, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.25;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 
   ${mq.medium(css`
     margin: 2rem 0;
@@ -64,12 +64,19 @@ const textBlurp = css`
 const menuButton = css`
   background: transparent;
   font-family: Lato, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.8rem;
+  font-weight: 200;
   color: #fff;
-  padding: 0.5rem 0.75rem;
-  margin-right: 1rem;
+  padding: 0.5rem;
+  margin-right: 0.75rem;
   position: relative;
+
+  ${mq.medium(css`
+    padding: 0.5rem 0.75rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 1rem;
+  `)};
 
   button {
     color: #fff;
@@ -99,7 +106,7 @@ const background = css`
 export default ({ data }) => {
   return (
     <div className={background}>
-      <div className="lg:w-1/2 py-4 px-8 lg:p-2">
+      <div className="container lg:w-1/2 py-4 px-8 lg:p-2 mt-8">
         <div className={introText}>Hello! My name is Dash_.</div>
         <h3 className={tagLine}>
           I help clients and companies achieve their digital goals.
@@ -110,21 +117,23 @@ export default ({ data }) => {
           contains React, GraphQl, Node and Express.
         </p>
       </div>
-      <div className="flex mt-2 lg:mt-16 justify-center lg:w-1/2">
-        <Link to="articles" className={menuButton}>
-          <button>Articles</button>
-        </Link>{' '}
-        <Link to="articles" className={menuButton}>
-          <button>Projects</button>
-        </Link>{' '}
-        <Link to="articles" className={menuButton}>
-          <button>Tools</button>
-        </Link>{' '}
-        <Link to="articles" className={menuButton}>
-          <button>Clients</button>
-        </Link>
+      <div className="lg:w-1/2 mt-auto flex justify-center flex-col">
+        <div className="flex mt-2 lg:mt-16 justify-center">
+          <Link to="articles" className={menuButton}>
+            <button>Articles</button>
+          </Link>{' '}
+          <Link to="articles" className={menuButton}>
+            <button>Projects</button>
+          </Link>{' '}
+          <Link to="articles" className={menuButton}>
+            <button>Tools</button>
+          </Link>{' '}
+          <Link to="articles" className={menuButton}>
+            <button>Clients</button>
+          </Link>
+        </div>
+        <SocialIcons />
       </div>
-      <SocialIcons />
     </div>
   )
 }
