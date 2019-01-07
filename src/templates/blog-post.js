@@ -6,7 +6,7 @@ import { css } from 'emotion'
 const textContent = css({
   fontFamily: 'Lato, sans-serif',
   fontSize: '1rem',
-  lineHeight: '1.75rem',
+  lineHeight: '1.75rem'
 })
 
 const articleTitle = css({

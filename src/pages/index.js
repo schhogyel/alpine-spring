@@ -31,9 +31,11 @@ const introText = css`
   font-size: 1.125rem;
   margin-bottom: 1rem;
   color: #fff;
+  margin-top: 1rem;
 
   ${mq.medium(css`
     margin-bottom: 2rem;
+    margin-top: 2rem;
   `)};
 `
 
@@ -106,7 +108,7 @@ const background = css`
 export default ({ data }) => {
   return (
     <div className={background}>
-      <div className="container lg:w-1/2 py-4 px-8 lg:p-2 mt-8">
+      <div className="container lg:w-1/2 py-4 px-8 lg:p-2">
         <div className={introText}>Hello! My name is Dash_.</div>
         <h3 className={tagLine}>
           I help clients and companies achieve their digital goals.
@@ -118,7 +120,7 @@ export default ({ data }) => {
         </div>
       </div>
       <div className="lg:w-1/2 mt-auto flex justify-center flex-col">
-        <div className="flex my-2 lg:mt-16 justify-center">
+        <div className="flex justify-center">
           <Link to="articles" className={menuButton}>
             <button>Articles</button>
           </Link>{' '}
