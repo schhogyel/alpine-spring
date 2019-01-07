@@ -3,10 +3,9 @@ import { css } from 'emotion'
 
 const svgInline = css({
   width: '1rem',
-  fill: '#EFF6FC',
 })
 
-const SocialIcons = () => {
+const SocialIcons = props => {
   return (
     <div className="flex items-center justify-center text-xl my-2 lg:mt-8">
       <div>
@@ -18,6 +17,7 @@ const SocialIcons = () => {
         >
           <svg
             className={svgInline}
+            fill={props.fill ? props.fill : '#EFF6FC'}
             aria-hidden="true"
             data-fa-processed=""
             data-prefix="fab"
@@ -39,6 +39,7 @@ const SocialIcons = () => {
         >
           <svg
             className={svgInline}
+            fill={props.fill ? props.fill : '#EFF6FC'}
             aria-hidden="true"
             data-fa-processed=""
             data-prefix="fab"
@@ -60,6 +61,7 @@ const SocialIcons = () => {
         >
           <svg
             className={svgInline}
+            fill={props.fill ? props.fill : '#EFF6FC'}
             aria-hidden="true"
             data-fa-processed=""
             data-prefix="fab"
